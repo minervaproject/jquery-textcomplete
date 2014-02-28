@@ -408,7 +408,7 @@
           if (include(this.data, val)) continue;
           index = this.data.length;
           this.data.push(val);
-          html += '<li class="textcomplete-item" data-index="' + index + '"><a>';
+          html += '<li class="textcomplete-item" data-index="' + index + '"><a href="#">';
           html +=   this.strategy.template(val);
           html += '</a></li>';
           if (this.data.length === this.strategy.maxCount) break;
