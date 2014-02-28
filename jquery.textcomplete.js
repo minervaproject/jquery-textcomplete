@@ -457,6 +457,11 @@
       },
 
       setPosition: function (position) {
+        var maxLeft = this.$el.parent().width() - this.$el.width();
+        if (position.left > maxLeft) {
+          position.left = maxLeft;
+        }
+
         this.$el.css(position);
         return this;
       },
